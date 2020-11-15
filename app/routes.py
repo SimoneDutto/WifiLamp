@@ -10,9 +10,9 @@ def index():
 
 @app.route('/changeColor', methods=["GET"])
 def changeColor():
-    redc = request.args.get("red", "")
-    greenc = request.args.get("green", "")
-    bluec = request.args.get("blue", "")
+    redc = int(request.args.get("red", ""))
+    greenc = int(request.args.get("green", ""))
+    bluec = int(request.args.get("blue", ""))
     rgb.RGBColor(redc, greenc, bluec) # change color
     return render_template('prova.html')
 
