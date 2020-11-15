@@ -17,7 +17,7 @@ function setColor(){
         green: g_hex,
         blue: b_hex
       };
-      jQuery.getJSON("/changeColor=?", data, function (result) {
+      jQuery.getJSON("/changeColor.html", data, function (result) {
       //alert(result);
     });
   body.style.backgroundColor = hex; 
