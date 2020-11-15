@@ -11,6 +11,7 @@ blue = GPIO.PWM(22, 75)      # create object blue for PWM on port 22
 
 
 def RGBColor(redc, greenc, bluec):
+    print("Colori: ",redc, greenc, bluec)
     red.start((redc/2.55))   #start red led
     green.start((greenc/2.55)) #start green led
     blue.start((bluec/2.55))  #start blue led
