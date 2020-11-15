@@ -13,7 +13,7 @@ def changeColor():
     redc = int(request.args.get("red", ""))
     greenc = int(request.args.get("green", ""))
     bluec = int(request.args.get("blue", ""))
-    rgb.RGBColor(redc, greenc, bluec) # change color
+    RGBColor(redc, greenc, bluec) # change color
     return render_template('prova.html')
 
 
