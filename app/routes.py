@@ -14,7 +14,7 @@ def changeColor():
     greenc = int(request.args.get("green", ""),16)
     bluec = int(request.args.get("blue", ""),16)
     RGBColor(redc, greenc, bluec) # change color
-    return 
+    return jsonify("OK")
 
 
 
