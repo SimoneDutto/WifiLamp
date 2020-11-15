@@ -1,6 +1,6 @@
 from app import app
 from flask import Flask, jsonify, render_template, request
-import rgb
+from app.rgb import *
 
 @app.route('/')
 @app.route('/index')
