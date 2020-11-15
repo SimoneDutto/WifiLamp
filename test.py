@@ -18,13 +18,13 @@ blue = GPIO.PWM(22, hz)      # create object blue for PWM on port 22
  
 try:   
     while True:
-            red.start((reddc/2.55))   #start red led
-        green.start((greendc/2.55)) #start green led
-        blue.start((bluedc/2.55))  #start blue led
+        red.start((reddc/2.55))   #start red led
+    green.start((greendc/2.55)) #start green led
+    blue.start((bluedc/2.55))  #start blue led
   
 except KeyboardInterrupt:
-        red.stop()   #stop red led
-        green.stop() #stop green led
-        blue.stop()  #stop blue led
-   
-        GPIO.cleanup()          # clean up GPIO on CTRL+C exit  
+    red.stop()   #stop red led
+    green.stop() #stop green led
+    blue.stop()  #stop blue led
+
+    GPIO.cleanup()          # clean up GPIO on CTRL+C exit  
