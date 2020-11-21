@@ -4,4 +4,4 @@ The concept is to have a Flask server able to interact with GPIO of Raspberry an
 
 ![Raspberry, LED and wiring](images/rasp.jpg)
 
-![Full lamp inside a simple metal box](lamp.jpg)
+![Full lamp inside a simple metal box](images/lamp.jpg)
